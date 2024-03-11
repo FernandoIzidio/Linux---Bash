@@ -1,0 +1,46 @@
+mount: Util para preparar(montar) dispositvo de armazenamento externo em pontos de montagens especificos
+
+    syntax:
+        mount args dev mount_point
+
+
+    Args:
+        -t(type) - Especifica o sistema de arquivos
+        
+        -o(options) - Permite definir as permissões do montagem do dispositivo externo. Values:
+
+            r(read only) - Read only, permite apenas leitura dos arquivos do dev
+            w(write) - Permissão para escrever no sistema de arquivos
+            x - Permissão para executar arquivos do sistema de arquivos
+
+        
+
+
+
+
+findmnt - Utilizado para mostrar informações detalhadas, sobre um sistema de arquivos montado
+
+
+
+
+lsblk: Lista blocos de armazenamento.
+
+df(disk free) - Cmd usado para verificar o espaço disponivel em disco em cada uma das partições
+    arguments:
+        -T(type) - Mostra o sistema de arquivos de cada partição
+        -H(human) - Formato o tamanho de cada partiçaõ para um tamnho legivel
+
+
+
+du(disk usage) - Cmd usado para obter o tamanho em disco utilizado por um diretório ou arquivo
+    syntax:
+        du args path
+
+    arguments:
+        -s(summary) - Vai mostrar apenas o tamanho total do arquivo/diretório informado sem analisar subdiretórios
+
+        -h - Formato o tamanho de cada arquivo e diretório para um tamanho legivel
+
+        -c(count) - Vai mostrar o espaço em disco utilizado para cada subdiretório e arquivo do caminho informado, e mostrar o tamanho total do caminho informado ao final
+
+

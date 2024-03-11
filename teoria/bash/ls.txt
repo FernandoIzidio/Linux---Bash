@@ -1,0 +1,56 @@
+ls é um prompt usado para listar arquivos e diretório do diretório atual.
+
+
+Parametros:
+    -a(all) - Lista todos arquivos e diretórios incluindo ocultos
+
+    -A(almost all) - Lista todos arquivos ocultos excluindo os diretórios . e ..
+
+    -B(ignore backups) - Não lista arquivos diretórios que estão salvos em backup(terminam com ~)
+
+    -c(ctime) - Ordena arquivos pelo tempo da ultima modificação de permissões
+
+    -C(colunm) - Formata saida em colunas
+
+    -1 - Mostra um arquivo/diretório por linha
+    
+
+    -d(directory) - Lista apenas diretórios
+
+    -f(files) -lista arquivos
+
+
+    -F(classify) - Adiciona um indicador especial no nome do arquivo. Exemplos:
+
+        / - para diretorios( dir/)
+        * - para executaveis ( exe*)
+        @ - item de atributo extendido ( file@)
+        | - Indica que o arquivo é um pipe
+        = - indica que o arquivo é um socket
+        > - indica que o arquivo é um link simbolico
+
+    -i(inode) - Lista arquivos e diretórios e mostra o id inode
+
+    -l(long) - Lista todos arquivos/diretórios do caminho atual de forma detalhada
+
+    -s(size) - Mostra o tamanho alocado em cada arquivo e diretório
+
+    -S( order size)  - Lista todos arquivos do diretório atual ordenando por tamanhoq
+
+
+    -r(reverse) ex ls -tr - Lista todos os arquivos e diretórios em ordem decrescente por data de modificação
+
+
+    -R(recursive) - lista recursivamente todos subdiretório e arquivos do diretório atual
+
+    -h(human) - Lista em formato longo, mas o tamanho dos arquivos em formato legivel para humanos
+
+    -t(time) - lista diretórios e ordena por data de modificação(asc ordem crescente)
+
+    
+    
+
+    
+
+
+

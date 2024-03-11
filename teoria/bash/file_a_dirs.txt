@@ -1,0 +1,10 @@
+
+
+mkdir - Usado para criar diretórios
+
+touch - Usado para criar arquivos
+
+rm - Usado para remover arquivos
+
+rmdir - Usado para remover diretórios
+

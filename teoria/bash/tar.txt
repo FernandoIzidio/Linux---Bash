@@ -1,0 +1,78 @@
+
+
+tar - É um utilitario utilizado para desempacotar/combinar arquivo no diretório atual
+
+Nota o tar não comprime nenhum arquivo, apenas combina varios arquivos em um único arquivo sem reduzir tamanho. Compactadores são o xz, e gz(gzip)
+
+syntax
+
+    tar [options] [file] - Extrai arquivo compactado no diretório atual
+    
+
+
+Parameters:
+    -x - Indica que vai extrair um arquivo
+
+    -r(append) - adiciona um novo arquivo diretório a um arquivo .tar 
+
+    -z - Indica que o arquivo foi comprimido por gzip(tar.gz, tar.tgz)
+
+    -J - indica que o arquivo foi comprimto por xz(tar.xz)
+
+    -j - indica que o arquivo foi comprimido por bzip2(tar.bz2)
+
+    -f(file) - Indica o nome do arquivo a seguir
+
+    -v - Mostra progresso/detalhes da operação na saida do terminal
+
+    -t - Lista o conteúdo de um arquivo tar
+
+    --delete remove arquivos de um arquivo .tar
+
+    --wildcards(joke char):str - É util para utilizar caracters curingas, para incluir ou excluir arquivos em operação tar
+        exemplo:
+
+            tar -xzvf data.tar.gz --wildcards '*.pdf' - Extrai apenas arquivos pdf, do arquivo compactado
+
+            tar -cjvf data.tar.bz2 --wildcards '*.html' -  Cria arquivo compactado com todos arquivos html, do diretório atual, e dos subdiretórios
+
+            --no-recursion - Não faz recursão nos subdiretórios
+
+            tar -cjvf data.tar.bz2 --wildcards --no-recursion '*.html' '*.css' - Cria arquivo compactado por bzip2, apenas com arquivos html, e css do diretório atual
+
+
+
+    Update samples:(Não disponivel para arquivos compactados, apenas para arquivos empacotados, com .tar)
+        tar -rf data.tar style.css - adiciona um novo arquivo ao data.tar
+
+    Delete Samples:
+        tar -tf data.tar | grep '.*.txt' | xargs -I {} tar --delete -f data.tar {}
+
+    Creation Samples:
+            
+            tar -cvf data.tar file1.txt file2txt - Combina dois arquivos em data.tar
+
+            tar -czvf data.tar.gz file2.txt document.pdf - Combina dois arquivos e compacta usando gzip
+
+    Reading Samples:
+
+            tar -tvf data.tar - Lista o conteúdo de data.tar
+
+
+            tar -tvzf data.tar.gz - Lista o conteúdo de um arquivo gzip
+
+
+    Extractions Samples:
+
+        tar -xvf data.tar - Extrai arquivo.tar e mostra operação de forma detalhada
+
+        tar -xzf pycharm-*.tar.gz  - Extrai um arquivo compactado por gzip
+
+        tar -xJf Pycharm-*.tar.xz - Extrai um arquivo compactado por xz 
+
+        tar -xzvf Pycharm-*.tar.tgz - Extrai uma arquivo compactado por tgz
+
+        tar -xjvf pycharm-*.tar.bz2 - Extrai um arquivo compactado por bzip
+
+
+        tar -xzf data.tar.gz path(file1) - Extrai um único arquivo do arquivo descompactado

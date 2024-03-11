@@ -1,0 +1,23 @@
+
+
+chown - É util para alterar os proprietarios  de  um arquivo
+
+cada arquivo pode ter no maximo um proprietario e um grupo proprietario(isso pode ser alterado com ACLs)
+
+syntax:
+    chown args target(USER:GROUP) file.texto
+
+Args:
+    -R(recursive) aplica alterações de forma recursiva em todos arquivos de um diretório
+
+samples:
+    chown -R new_user dir/ - Altera o propritario de forma recursiva em todos arquivos de dir1/
+
+
+    chown :group_foo file.txt - Altera o grupo proprietario de file.txt
+
+    chown -R user_bar:group_foo dir1/ - Altera o usuário e grupo proprietario em todos arquivos de dir1/
+
+
+
+

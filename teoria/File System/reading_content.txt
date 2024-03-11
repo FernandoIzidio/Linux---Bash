@@ -1,0 +1,31 @@
+
+
+less path - Le o conteúdo de um arquivo de forma paginada
+    b - Avança para a proxima pagina
+
+    / - Usado para fazer pesquisa
+        -n mostra proxima ocorrência da pesquisa
+        -N mostra ocorrência anterior
+
+    q - sai do less
+
+    :number navega para uma linha
+
+head path - Mostra as primeiras linhas de um arquivo
+    args:
+        -n define o número de linhas
+
+tail path - Mostra as ultimas linhas de um arquivo
+    args:
+        -n define o número de linhas
+
+cut - Usado para visualizar conteúdo de maneira delimitada.
+
+    args:
+        -f(fields): int - Seleciona o número/indice da parte delimitada
+
+        -d(delimiter): char - Define o delimitador de arquivo
+
+    Exemplo:
+
+        cut -f 2 -d , path - Pega a 2º parte que vier após a virgula no arquivo especificado

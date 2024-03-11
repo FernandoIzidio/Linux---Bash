@@ -1,0 +1,58 @@
+Syntax:
+    chmod args MODO ARQUIVO
+
+Permissões númericas
+
+    Modelo de permissões vai de 0 a 7, onde é a permissão maxima. Extrutura
+
+    primeiro digito - Permissões do usuário
+
+    segundo digito - permissões do grupo
+
+    terceiro digito - permissões de fora do grupo
+
+    Valores para cada permissão:
+        4 - leitura
+        2 - escrita
+        1 - execução
+
+    digito 7 - significa que determinado usuário ou grupo tem permissões totais sobre o arquivo
+
+
+
+
+    exemplo:
+
+        chmod 755 file.sh - o usuario proprietario tem permissão total sobre arquivo, e usuários de grupo e outros tem permissões de leitura e execução
+
+
+Args:
+    -u(user) - aplica permissões ao proprietario
+    -g(group) - aplica permissões aos grupos
+    -o(others) - aplica permissões a outros
+    -a(all) - aplica permissões a todos
+
+    + - adiciona permissão
+    - - remove permissão
+
+    -r(read) - Permissão de leitura
+    -w(write) - Permissão de escrita
+    -x(execution) - Permissão de execução
+
+
+
+
+    -R - aplica configurações de forma recursiva em todos arquivos de um diretório 
+
+    chmod [target[u, g, o, a] operation(-, +)  modo[w, r, x]] file Syntax do modelo simbolico
+
+    chmod a+r -R dir1/ - Aplica permissão de leitura
+
+    chmod go-w file.pdf - Remove a permissão de escrita dos grupos e outros usuários para file.pdf
+
+    
+
+
+
+
+

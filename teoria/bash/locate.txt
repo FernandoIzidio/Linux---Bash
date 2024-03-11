@@ -1,0 +1,21 @@
+Locate é um utilitario externo ao padrão do linux, utilizado para buscar arquivos/diretórios registrados na base de dados do linux
+
+Syntax:
+    locate [filename/dir]
+
+Vantagens:  
+        Encontra arquivos de forma muita rapida
+Desvantagens:
+        Pode precisar de admin para ver todos os resultados
+        E tem dependência no db do SO, então por isso é sempre necessário atualizar o db antes de usar um comando
+
+sudo apt install mlocate - Para instalar o utilitario locate
+
+sudo updatedb - Utilizado para atualizar a base de dados
+
+
+-c(count) - retorna o número de correspondências, ao invés de printar o padrão
+
+-i - Pesquisa arquivos de forma isenstiiva
+-l ou -n - Defini um limite de retornos para o comando, e para o cmd quando o limite é atingido
+

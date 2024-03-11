@@ -1,0 +1,68 @@
+Diretórios linux e seus propósitos
+
+    /bin:
+        Armazena binários essenciais do sistema (comandos) que são necessários para a inicialização do sistema e podem ser utilizados pelos usuários no shell.
+
+    /boot:
+        Contém os arquivos do bootloader, kernel e outros componentes essenciais para o processo de inicialização do sistema.
+
+    /dev:
+        Diretório que armazena drivers de dispositivos fisicos, como placa de video, placa de rede e etc
+
+    /etc:
+        Diretório contém arquivos de configurações do sistema, e configurações de outras aplicações externas    
+
+        /etc/profile.sh - Arquivo de inicialização de perfil global, responsável por carregar comandos, variaveis de ambiente, e outras configurações do SO(persistir variaveis de ambiente)
+
+        /etc/environment - Contém variavel de ambiente $PATH que define quais caminhos são buscados, na hora de executar um cmd no bash
+
+        /etc/issue ou /etc/motd - Arquivos de logs de login ssh
+
+        
+        
+
+
+    /home:
+        É o diretório base para os diretórios pessoais dos usuários. 
+
+    /lib e /lib64:
+        Contêm bibliotecas compartilhadas necessárias para a execução de programas no sistema
+
+    /media:
+        Contém arquivos para montar dispositivos de armazenamento externos, tipo pendrives,  cd's, partições do disco e etc
+
+    /mnt:
+        Tradicionalmente usado para montar sistemas de arquivos temporários ou sistemas de arquivos remotos.
+
+    /opt:
+        É usado para instalar aplicativos/softares ou pacotes de terceiros. Cada pacote de software(de terceiros) geralmente possui seu próprio subdiretório aqui.
+
+    /proc:
+        Contém informações sobre processos e configurações do kernel. Os arquivos neste diretório são virtuais e fornecem uma interface para interagir com o kernel.
+
+    /root:
+        É o diretório pessoal do usuário root (superusuário) e é diferente do diretório pessoal de outros usuários.
+
+    /run:
+        Contém arquivos temporários, como PID (Process ID) de processos em execução e sockets, necessários durante a inicialização do sistema.
+
+    /sbin:
+        Similar a /bin, contém binários essenciais do sistema, mas esses são geralmente destinados apenas ao superusuário (root).
+
+    /srv(service/server):
+        Armazena dados de serviços fornecidos por servidores.
+
+    /sys:
+        Fornece uma interface para configurações e informações do kernel.
+
+    /tmp:
+        Armazena arquivos temporários que são excluídos quando o sistema é reiniciado.
+
+
+    /usr:
+        Contém a maior parte do software do sistema e dos usuários. Inclui subdiretórios como /usr/bin, /usr/lib, /usr/share, etc.
+
+    /var:
+        Contém dados variáveis do sistema, como logs, spools de e-mail e caches.
+
+

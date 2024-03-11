@@ -1,0 +1,40 @@
+Utilitarios para leituras e edição
+
+head - Mostra as primeiras linhas de um arquivo
+tail - Mostra as ultimas linhas de um arquivo linhas de um arquivo
+
+
+less - Utilitario para leitura de arquivos de forma dinâmica
+
+    / -  Tecla para fazer pesquisa
+
+    n - Mostra a proxima ocorrência do padrão
+
+    b - Mostra a proxima pagina
+
+    q - sai do leitor less
+
+
+ncdu(Ncurses disk usage) - Utilitarios para navegar no sistema de arquivos, ele abre um diretório atual, e permite navegar a partir do diretório atual de forma interativa, ele emula um explorador de arquivos no terminal
+
+    -s(size) - Ordena arquivos da interface por tamanho
+
+    -n(name) - Ordena por nome
+
+    -b - abre o shell no diretório atual
+
+    e(excluded, hidden) - Mostra arquivos excluidos ou ocultos do diretório
+
+    -r(resize) - recalcula o tamanho alocado em arquivos
+
+    -i (information) - Mostra informações do arquivo atual
+
+    -d (delete) - Remove arquivo, diretório atual
+
+
+    
+
+vim - Editor de texto
+
+nano - Editor de texto
+

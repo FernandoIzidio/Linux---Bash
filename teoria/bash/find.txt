@@ -1,0 +1,61 @@
+Find é usado para iterar recursivamente sobre todos os diretorios do path especificado.
+
+find . - Vai iterar recursivamente sobre todos os diretórios do diretório atual. E retornar o que foi encontrado
+
+
+Examples:
+    find . | grep truco - Filtra para todos arquivos que tenha o nome truco
+
+    find . -name '*.html' - Lista todos arquivos html encontrados
+
+    find . -name '*.pdf' -a -name '*.png' -exec rm {} - Remove todos arquivos pdf e png recursivamente a partir do diretório atual
+
+
+Paramaters:
+    -type - Define o tipo de arquivos que serão listados por find
+        f - Lista apenas arquivos
+        d - Lista apenas diretórios
+
+    -maxdepth - Define o maximo de profundidade de diretórios que a recursão vai ir
+
+    -name str -  Usado pra filtrar por nome
+
+    -iname(isensitive) - Usado para filtrar por nome
+
+    -a - Funciona como and 
+    -or - Funciona como or
+    -not - Faz a negação
+
+    - exec - Vai capturar a saida do find com {} para usar em outro prompt 
+
+    - ok - Funciona de forma parecida ao exec mas pedi confirmação para cada prompt
+
+    -l(long) - Mostra informações da listagem de forma detalhada
+
+
+    -s - Mostra o tamanho alocado em cada bloco de diretório ou arquivo
+
+    -user - Filtra arquivos por nome de usuário
+
+    -group - Filtra arquivos por grupo
+
+    -perm:int - Filtra arquivos por nivel de permissão
+
+    -size - Filtra saida por tamanho de arquivo
+        find path -size +10M - Procura por arquivo path com mais de 10 megas
+        find path -size -2M - Procura por arquivo path com menos de 2 megas
+
+        prefixes:
+            M - megas
+            G - giga
+    
+    -mmin(modify min): int - Filtra arquivos que foram modificados(em conteúdo) a no minimo x minutos
+        exemplos:
+                find / -mmin -10 - Filtra arquivos que foram modificados a no minimo menos 10 minutos
+                find / -mmin +15 - Filtra arquivos que foram modificados a no minimo mais de 15 minutos
+
+    -atime(acess time): int - Filtra arquivos por timestamp de ultimo acesso
+
+    -ctime (permission change time) - Filtra arquivos por timestamp da ultima modificação de permissão
+        exemplos:
+            find / -ctime +2 - Busca arquivos que tiveram permissões modificadas a mais de 2 dias

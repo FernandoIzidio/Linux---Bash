@@ -1,0 +1,19 @@
+As permissões em sistemas unix, são representados por um serie de caracteres e números que representam o grau de permissão de determinado usuário, grupo, ou outros usuários em determinado arquivo:
+
+
+Syntax:
+    -(file type)rw-(owner)r--(group)r--(no-group users() -
+
+
+First caracter(file type):
+    - Indica o tipo de arquivo e pode ser dois tipos:
+
+        "-" - Indica que é um arquivo regular
+        "d" - Indica que é um diretório
+
+
+Permissions values for owner and users:
+
+    w - permissão para escrever
+    r - permissão para ler
+    x - permissão para executar

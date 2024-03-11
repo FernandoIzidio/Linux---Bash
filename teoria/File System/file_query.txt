@@ -1,0 +1,62 @@
+locate filename/dir - Usado para localizar arquivos do sistema operacional, ele busca arquivos que estão registrado no banco de dados do sistema operacional, as consultas são mais rapidas, que o find, mas é preciso sempre atualizar o banco de dados.
+
+updatedb - atualiza banco de dados do SO
+
+syntax:
+    locate path
+
+args:
+    -n: INT - Limita o número de saidas
+    -i(isensitive) - Não diferencia maiusculo de minusculo
+
+find - Lista recursivamente todos arquivos e diretórios a partir de path.
+
+
+    syntax:
+        find path args
+
+    arguments:
+        -type - Lista apenas arquivos de tipo especifico 
+
+        -name - Lista apenas arquivos de nome especifico
+
+        -user - Lista apenas arquivos que pertence a um usuário especifico
+
+        -group - Lista apenas arquivos que pertence a um grupo em especifico
+
+        -size - Lista apenas arquivos de tamanho especifico
+
+        -ctime - Lista apenas arquivos que tiveram permissões alteradas em até x dias especificos
+
+        -atime - Lista apenas arquivos que foram acessados em momento especifico
+
+        -mmin - Lista apenas arquivos que foram modificados em momento especifico
+
+grep - Usado para filtrar saida de comandos que correspondam aos padrão, ou procurar por padrões em conteúdo de arquivos
+
+    syntax:
+
+        grep [args] pattern [arquivos/path]
+
+
+    arguments:
+        -i(isensitive) - Filtra por padrão sem diferenciar maiusculo de minusculo
+
+        -v:str - Usado para remover arquivos que não correspondam ao padrão
+
+        -c:str - Retorna o número de saidas correspondentes ao padrão
+
+        -n - Indexa o número correspondente a linha na saida original, ou mostra o número da linha da ocorrẽncia(util para conteúdo de arquivos)
+
+        -r - Busca o padrão recursivamente por diretórios
+
+        -l - Mostra apenas o nome dos arquivos que correspondam ao padrão, (util para pesquisar conteúdo de arquivos, e ao inves de mostrar o conteúdo e o arquivo, mostra apenas o arquivo que teve ocorrência)
+
+    Exemplos:
+
+        ls | grep -ni pattern  - Procura por padrão nos arquivos listados, e indexa o número correspondente a saida original
+
+        grep -ni palavra arquivo.txt - Busca por palavra de forma isensitiva no arquivo.txt e retorna o número da linha que ocorrreu a palavra no arquivo
+
+
+

@@ -1,0 +1,65 @@
+mount - Mostra todas as partições do disco
+findmnt - Mostra todas as partições do disco de forma legivel
+
+df(disk free) - Verifica o espaço disponível de cada partição do disco
+    syntax:
+        df [args]
+
+    args:
+        -T(type) - Mostra os sistema de arquivos de cada partição
+        -H(human) - Formato o tamanho da partição em formato legivel para humanos
+
+
+du(disk usage) -  Verifica o espaço em disco utilizado por cada diretório e arquivo.
+
+    syntax:
+        du [args] path
+
+    args:
+        -h - Formata tamanho dos arquivos e diretórios em formato legivel para humanos
+
+        -s(summary) - Mostra apenas o espaço total utilizado, do diretório ou arquivo informado, sem mostrar espaço utilizado por outros arquivos e subdiretórios. Resumindo mostra o tamanho total de um diretório ou arquivos
+
+        -c(count): Exibe o tamanho total no final da listagem.
+
+pwd - Retorna o caminho completo do diretório atual
+
+         
+touch - Cria um arquivo vazio
+    syntax:
+        touch path/name 
+
+mkdir - cria diretórios
+    syntax: 
+        mkdir path
+
+
+rmdir  - Remove diretórios
+    syntax:
+        rmdir [args] path
+
+
+rm - Remove arquivos
+    syntax:
+        rm [args] path
+        
+    args:
+        -r(recursive) - Remove todos os arquivos de um diretório/caminho recursivamente
+        -f(force) - Forçadamente
+
+
+ps - mostra os processos do diretório atual
+
+ps aux - Mostra todos os processos do linux
+
+
+wc(word count) - Retorna o número de palavras de determinada saidas
+
+    args:
+        l(line) - Retorna o número de linhas de uma saida
+
+    Exemplo:
+        ls | wc -l - Retorna o número de linhas dessa saida
+
+    
+

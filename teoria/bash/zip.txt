@@ -1,0 +1,45 @@
+
+zip - É usado para comprimir diferentes arquivos/diretórios
+
+syntax:
+    zip [args] [file] [add_files]
+
+zip data.zip file1.txt document.pdf - Comprime os dois arquivos e forma data.zip
+
+unzip data.zip - Extrai o conteúdo de data.zip
+
+arguments:
+    -r(recursive) adiciona o conteúdo de um diretório de forma recursiva 
+
+    -u(update) - Atualiza/adiciona novos arquivos a um zip existente
+
+    -d(delete) - Remove arquivos do arquivo zip
+
+    -e(encrypt)-> file.zip - Cria um arquivo .zip com senha
+
+    -P(password)-> str - Define qual vai ser a senha do arquivo zip
+
+
+
+unzip - Usado para descompactar um arquivo .zip
+
+    arguments:
+
+        -l(list) - lista o conteúdo de arquivo zip
+
+        -P(password) - descompacta zip com senha
+
+        -d(destination) - Extrai o arquivo em diretório em especifico
+
+    Samples:
+
+        unzip data.zip  - Descompacta arquivo zip
+
+        unzip -l data.zip - Lista o conteúdo de um arquivo zip
+
+        unzip -P 'password' data.zip - Extrai arquivo com senha
+
+        unzip data.zip -d path - Extrai data.zip para o caminho path
+
+        
+         

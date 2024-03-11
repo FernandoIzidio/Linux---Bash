@@ -1,0 +1,25 @@
+gzip utilitario de compressão de arquivos, utilizado para criar arquivos compactados:
+    
+    syntax:
+        gzip args path
+
+
+    args:
+
+        -c - Imprime saida compactada no terminal ao invés de criar arquivo compactado
+
+        -d - Descompacta arquivo compactado por data.tar.gz
+
+        -r - Usado para iterar de forma recursiva sobre um diretório, e compactar todos arquivos de um diretório recursivamente. Exemplo:
+
+            gzip -r dir1/ - Vai compactar todos arquivos de dir1
+
+            gzip -rd dir1 - Vai descompactar recursivamente todos arquivos de dir1
+
+
+        -k(keep) - Mantém arquivo orinal, sem substituir por versão compactada
+
+
+gunzip arquivo.tar.gz 0 Descompacta arquivo compactado
+
+        -c - Em vez de descompactar imprime saida Descompactada

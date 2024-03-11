@@ -1,0 +1,7 @@
+Nomes de arquivos que tem número 5 no nome: 
+file45.txt
+file25.txt
+file35.txt
+file50.txt
+file5.txt
+file15.txt

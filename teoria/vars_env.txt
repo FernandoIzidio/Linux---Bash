@@ -1,0 +1,8 @@
+$USER - Equivale o ao nome de usuário logado
+    samples:
+        mkdir /home/$USER/dir1 - Cria o dir1 na home do usuário logado
+
+$EDITOR - editor padrão do linux
+vipw -abre o editor
+
+$PATH(etc/environment) - Variavel de ambiente, define os caminhos onde serão buscados para executar comandos, tipo ls, mkdir e etc, ou seja caminho dos binarys dos cmds do bash

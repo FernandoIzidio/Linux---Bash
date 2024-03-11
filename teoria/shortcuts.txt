@@ -1,0 +1,53 @@
+
+Linux:
+    Control:
+        Common: 
+            control + y - Refazer ação
+
+        Navegação no Sistema e Janelas
+            Control + alt + right/left arrow - Mover para outra area de trabalho
+    
+            up/down arrow - Scroll
+
+        abrir aplicações:
+
+            Control + alt + T - Abre um terminal
+
+
+            Control + alt + delete - Abre gerenciador de tarefas
+            
+
+
+    Alt: 
+        Navegação de janelas:
+            alt + tab - Alterna entre janelas
+
+            alt + F4 - fecha uma janela
+
+            alt + space - Abre o menu de contexto da janela ativa
+
+        
+
+
+
+        Abrir aplicações:
+            print - Abre o software de prints
+
+    
+    Cmd/Win:
+
+            cmd/win + e - Abre o explorador de arquivos
+
+            cmd/win + d - Mostra a area de trabalho
+
+
+        
+
+
+
+Atalhos de terminal:
+    Control + shift + t - Abre novas abas no terminal
+    Control + shift + n - Abre novas guias no terminal
+    Control + shift + w - Fecha terminal atual
+
+

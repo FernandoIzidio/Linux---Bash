@@ -1,0 +1,21 @@
+O python no linux por padrão é a versão 3.10.13
+Python3 é atalho(link simbolico) que aponta para a versão padrão do python
+
+Os diretórios onde o python3 pode estar instalado é:
+    /usr/bin/
+    /bin
+    /etc/alternatives/
+    ~/.local/bin/ - Alguns casos pode aparecer aqui.
+
+type -a python3 - Mostra todos os diretórios onde o python está instalado
+
+
+ls /usr/bin/python* - Mostra versões do python instaladas na maquina
+
+sudo update-alternatives --config <link_name> - Mostra as alternativas configuraveis de um bash:
+    ex:
+        sudo update-alternatives --config python3
+
+sudo update-alternatives --install <link_path> <link_name> <new_version_path> <priority:int> - Atualiza a lista de prioridade de versão de determinado prompt: Ex:
+        sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1
+        -Adiciona a versão do python3.12 como padrão do bash python3

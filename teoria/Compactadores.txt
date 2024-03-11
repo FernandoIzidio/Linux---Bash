@@ -1,0 +1,19 @@
+gzip ou targzip (-z no tar):
+    Extensão: .gz(gzip) .tgz
+    Características: Rápido, utiliza o algoritmo DEFLATE.
+    Vantagens: Rapidez na compressão e descompressão, amplamente suportado.
+    
+bzip2 (-j no tar):
+    Extensão: .bz2(bzip2)
+    Características: Usa o algoritmo Burrows-Wheeler.
+    Vantagens: Taxas de compressão mais altas que o gzip, mas pode ser mais lento.
+
+xz (-J no tar):
+    Extensão: .xz(xz)
+    Características: Utiliza o algoritmo LZMA, oferece alta compressão.
+    Vantagens: Excelente taxa de compressão, amplamente utilizado para distribuição de software.
+
+zip (sem opção no tar):
+    Extensão: .zip(zip)
+    Características: Suporta compactação e arquivos com senha.
+    Vantagens: Compatível com sistemas Windows, suporte para senha.

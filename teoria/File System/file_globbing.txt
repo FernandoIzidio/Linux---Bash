@@ -1,0 +1,32 @@
+É um contexto de bash, onde é verificado se os nomes dos arquivos correspondem ao padrão, antes de passar como argumento para o comandos
+
+metacaracter ->
+
+            * - Corresponde a qualquer caracter que se repita 0 ou mais vezes(sequence)
+
+            ? - Corresponde a qualquer caracter que se repita 0 ou uma vezes(unique)
+
+            [] - Usado para aceitar apenas caracters que estão dentro do colchetes
+
+            [^] ou [!] - Usado para negar todos carcters de dentro do colchetes
+
+            {} - Usado para aumentar o número de opções para correspondência de padrão exemplo.
+
+                touch teste{1,2,3,4,5} - Vai criar 5 arquivos
+
+                touch teste{a,b,c}-{d,e,f} - Faz permutação/produto das possibilidades de criação de arquivos e cria varios arquivos com todas as possibilidades de criação de arquivos
+
+                touch teste{a..d}{1..4} - Também faz permutação
+
+
+redirecionamento:
+    
+        cmd > file - Redireciona a saida de cmd para file, e substitui conteúdo existente
+
+        cmd >> file - Redireciona a saida de cmd para file, e anexa o novo conteúdo ao final do arquivo
+
+        cmd < file - Redireciona conteúdo de file, para entrada de um cmd
+
+
+
+

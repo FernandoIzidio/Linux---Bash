@@ -1,0 +1,17 @@
+
+
+xargs:
+
+    -I(placeholder), example: - Captura a saida de um comando, e armazena em um placeholder  e executa cada argumento por vez da saida armazenada no novo cmd
+        cmd |xargs -I {} cmd {} 
+
+ls1
+
+    -F(classify) - Adiciona um indicador especial no nome do arquivo. Exemplos:
+        * - executaveis
+        / - dirs 
+        = - sockets
+        > - links
+        | - pipes
+
+    ls -b(escape) - Escapa caracteres não legiveis, ou não printaveis na codificação padrão do sistema, mostrando um código octal para representa-los

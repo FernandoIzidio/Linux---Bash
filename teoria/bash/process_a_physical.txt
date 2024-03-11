@@ -1,0 +1,23 @@
+
+ps - Lista todos os processos da sessão do terminal atual 
+
+    args:
+
+        aux - Lista todos processos do linux
+
+
+htop - Mostra todos os processos em execução
+
+lsusb - Mostra todos os dispositivos usb conectados
+
+lspci - Mostra todos os dispositivos pci conectados
+
+lsblk - Mostra todos os dispositivos em de armazenamento do sistema operacional
+
+lsmod - Mostra todos os drivers carregados no kernel
+
+aplay - Usado para obter informações sobre dispositivos de audio
+    -l - Lista todos dispositivos de audio do SO
+
+
+pci(periferical control interconected) - dispositivo periferico interconectado

@@ -1,0 +1,8 @@
+
+
+grep - Usado para filtrar a saida de um cmd
+
+sort - Usado para ordenar a saida de um cmd
+
+wc(word count) - Conta o número de palavras ou linhas de uma saida de cmd
+

@@ -1,0 +1,28 @@
+Secure Shell é um protocolo utilizado para fazer transferência de dados entre diferentes sistemas de forma segura mesmo com redes inseguras
+
+
+ssh-keygen - Gera uma chave ssh
+
+    parameters:
+        -t - Tipo da chave ssh
+            rsa - Tipo rsa muito testado e compativel com a maioria dos servidores e clientes ssh
+
+        -b - Tamnho em bits da chave ssh
+            int
+
+        -f - Caminho onde vai ser armazenado a chave ssh
+            Sample:
+                ssh-keygen -f ~/.ssh/id_rsa -t rsa -b 4096 - Gera uma chave ssh na home no diretório .ssh
+
+
+ssh_key.pub:    
+    a chave publica tem que ir pro github ou outro servidor desejado.
+
+ssh_key:
+    e a chave privada fica com agente ssh
+
+ssh-add [path_private_key] - Adiciona uma chave ssh ao agente ssh atual
+
+ssh-add -l - Lista as chaves ssh do agente atual
+
+

@@ -1,0 +1,26 @@
+Cada arquivo/diretório pode ter no maximo um usuário proprietario, e um grupo proprietario(exceto ACLs)
+
+
+Montar Sistema de Arquivos - Processo para tornar disponivel o gerenciamento e manipulação de arquivos, de um dispositivo externo, ou seja preparar um dispositivo de armazenamento externo, para ter seus arquivos manipulados e gerenciados
+
+Sockets - Canal de comunicação bidirecional, que permite a transferência de dados entre processos, e entre maquinas em uma rede. São usados para estabelecer comunicação entre processos,e  dispositivos diferentes.
+
+
+
+
+    Stream sockets - Canal de comunicação bidirecional que permite a transferência de dados entre diferentes processos e dispositivos em rede. Normalmente stream sockets usam o protocolo TCP/IP para fazer transferência de dados de forma segura e garantir a consistência dos dados
+
+
+    Datagram Sockets - Canal de transmissão de dados inseguro e sem conexão. Este socket é baseado no protocolo UDP(User Datagram Protocol), que é um protocolo que tolera a perda de dados, mas em contrapartida é um dos protocolos de transmissão de dados mais rapidos. Normalmente utilizados, em plataformas de videos, ou jogos
+
+
+pipes - Canais de transmissão de dados entre processos, usado para transferir a saida de um processo, para entrada de um outro processo. 
+
+    FIFO(First in, First Out) - São pipes nomeados criados explicitamente no sistema de arquivos, usados para transmissão de dados entre processos. São mostrados como arquivos regulares, e são criado pelo mkfifo
+
+
+
+
+File Descriptor - Indice único que identifica um processo em execução
+
+PCI(periferical control interconected) - dispositivo periferico interconectado

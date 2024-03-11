@@ -1,0 +1,16 @@
+xargs é um recurso utilizado para capturar a saida de comandos canalizados exemplo cmd | xargs {} do cmd, {} - vai reprentar a saida do comando anterior
+
+Arguments:
+    Por padrão desempacota a lista de argumentos canalizadas por |, e passa no final do outro comando
+
+    exemplos ls | xargs rm  - Vai passar de forma desempacotada a lista de argumentos da saida de ls, para rm, vai executar apenas um cmd rm
+
+    -I - Cria um placeholder para referênciar a saida do comando anterior, o placeholder vai passar um argumento por vez pro outro cmd
+
+        ls -f | xargs -I {} rm {} - Remove um arquivo por vez dos arquivos listados 
+
+    -n(number) - Determina o número de argumentos por vez que será passado ao cmd
+        exemplo:
+            echo "Um Dois Três Quatro" | xargs -n 2 echo - Echo vai imprimir em duas linhas os quatros argumeentos: Ex:
+                Um Dois
+                Três Quatro
